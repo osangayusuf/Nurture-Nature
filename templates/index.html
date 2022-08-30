@@ -4,50 +4,52 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
     <link rel="shortcut icon" href="./img/logo.png" type="image/x-icon">
     <title>Nurture Nature</title>
 </head>
 <body>
    <div class="wrapper">
-    <div class="main-container">
-      <div class="nav-bar">
-         <div class="logo">
-          <img src="img/logo.png" alt="logo">
-        </div>
-        <div class="container">
-          <ul class="nav-links">
-              <li><a class="active" href="#home">Home</a></li>
-              <li><a href="#about">About US</a></li>
-              <li><a href="#services">Our Services</a></li>
-              <li><a href="#gallery">Gallery</a></li>
-              <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-        <div class="container-1">
-          <ul class="nav-links-2">
-            <li><a href="#">Login</a></li>
-            <li><a href="#">Sign Up</a></li>
-          </ul>
-        </div>
+    <div class="nav-bar">
+        <div class="logo">
+        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="logo">
       </div>
-        <div class='main-content'>
-          <h1>Keeping nature alive for everyone</h1>
-          <blockquote><em><q>If you look the right way, you can see that the whole world is a garden</q></em></blockquote> 
-          <p>~Frances Hudgson Burnett</p>
-        </div>
-        <div class="about" id="about">
-          <h2>About Us</h2>
-          <p>We at NUTURE NATURE are basically a landscaping business. Here in Jos, there 
-            aren't much businesses who render landscaping services so we are here to fill in
-            that gap and satisfy customers' needs.</p>
-          <a href="#services">Services we offer</a>
-        </div>    
+      <div class="container">
+        <ul class="nav-links">
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#about">About US</a></li>
+            <li><a href="#services">Our Services</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="container-1">
+        <ul class="nav-links-2">
+          <li><a href="#">Login</a></li>
+          <li><a href="#">Sign Up</a></li>
+        </ul>
+      </div>
     </div>
+      <div class='main-content'>
+        <h1>Keeping nature alive for everyone</h1>
+        <blockquote>
+          <em>
+            <q>If you look the right way, you can see that the whole world is a garden</q>
+          </em>
+        </blockquote> 
+        <p>~Frances Hudgson Burnett</p>
+      </div>
+      <div class="about" id="about">
+        <h2>About Us</h2>
+        <p>We at NUTURE NATURE are basically a landscaping business. Here in Jos, there 
+          aren't much businesses who render landscaping services so we are here to fill in
+          that gap and satisfy customers' needs.</p>
+        <a href="#services">Services we offer</a>
+      </div>    
     <div class="services">
       <h2 id="services">OUR SERVICES</h2>
       <div class="box">
-        <img src="./img/flower.jpg" alt="getting started">
+        <img src="{{ url_for('static', filename='./img/flower.jpg') }}" alt="getting started">
         <h3>Getting Started</h3>
         <p>If your just getting started at growing your orchard or your garden,or<br>
           if you would like to start one, we can help in forms of advice or<br>
@@ -55,7 +57,7 @@
         </p>
       </div>
       <div class="box">
-        <img src="./img/landscaping.jpg" alt="landscaping">
+        <img src="{{ url_for('static', filename='./img/landscaping.jpg') }}" alt="landscaping">
         <h3>Landscaping</h3>
         <p>Do you have a strip of land or you have to layout your front yard <br>or back yard, or
           even the entrance of your organization?<br> We can make your garden or other piece of
@@ -64,7 +66,7 @@
         </p>
       </div>
       <div class="box">
-        <img src="./img/sales.jpg" alt="sales">
+        <img src="{{ url_for('static', filename='./img/sales.jpg') }}" alt="sales">
         <h3>Sales</h3>
         <p>Are you looking into purchasing tools to start up? <br>
             We have a page where you can purchase your gardening tools alongside<br>
@@ -72,8 +74,8 @@
         <p>We also deliver bouquets and do floral decorations for your events.</p>   
       </div>
       <div class="box">
-        <img src="./img/consultancy.jpg" alt="consultancy">
-        <h3>Consultancy</h3>
+        <img src="{{ url_for('static', filename='./img/consultancy.jpg') }}" alt="consultancy">
+        <h3>Consultancy</h3> 
         <p>Our services also include consultancy. You can meet professionals who<br>
           you can talk to and who can guide you through your Orchid journey<br>
           with no need of even meeting them physically.</p>
@@ -107,20 +109,20 @@
   
         <div class="main-footer">
           <div class="logo-2">
-            <img src="./img/logo.png" alt="logo">
+            <img src="{{ url_for('static', filename='./img/logo.png') }}" alt="logo">
           </div>
           <div class="nav-links">
             <ul>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Gallery</a></li>
-              <li><a href="#">Contact</a></li>
-              <li><a href="#">Blog</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#blog">Blog</a></li>
             </ul>
           </div>
           <div class="icon">
-            <a href="#"><img src="./img/logo-facebook.svg"></a>
-            <a href="#"><img src="./img/logo-instagram.svg"></a>
-            <a href="#"><img src="./img/logo-whatsapp.svg"></a>
+            <a href="#"><img src="{{ url_for('static', filename='./img/logo-facebook.svg') }}" alt="facebook"></a>
+            <a href="#"><img src="{{ url_for('static', filename='./img/logo-instagram.svg') }}" alt="instagram"></a>
+            <a href="#"><img src="{{ url_for('static', filename='./img/logo-whatsapp.svg') }}" alt="whatsapp"></a>
           </div>
         </div>
      </div> 
