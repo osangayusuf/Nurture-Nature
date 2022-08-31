@@ -240,7 +240,13 @@ form textarea{
     width: auto;
     background-color: #183a1d;
     color: #e1eedd;
-    border-radius: 6px;
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+
+#submit:hover{
+    color: #e1eedd;
+    background: #f0a04b;
 }
 
 .main-footer{
@@ -268,8 +274,6 @@ form textarea{
     width: 30px;
     padding-left: 10px;
     filter: invert(94%) sepia(51%) saturate(182%) hue-rotate(17deg) brightness(107%) contrast(99%);
-
-
 }
 
 .nav-links{
@@ -292,4 +296,19 @@ form textarea{
 .main-footer a:hover{
     text-decoration: none;
     color: #f0a04b;
+}
+
+.go{
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 25px;
+    background: #183a1d;
+    padding: 10px 20px;
+    color: #fefbe9;
+    margin-bottom: 30px;
+}
+
+.go:hover{
+    color: #f0a04b;
+    background: #e1eedd;
 }
