@@ -1,0 +1,270 @@
+/* @import url('https://fonts.google.com/specimen/Poppins?query=popp'); */
+/* global styling */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* ========Styling for about div =========== */
+.about-section {
+    display: flex;
+    flex-direction: column;
+    background-image: url(../img/yard.jpg);
+    background-size: 100% 100%;
+    color: white;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* styling for nav bar */
+.about-section .nav-bar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100px;
+}
+
+.about-section .nav-bar .logo img {
+    height: 70px;
+    width:200px;
+    margin: 10px;
+    padding: 15px;
+}
+.about-section .nav-bar .container .nav-links {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+}
+.about-section .nav-bar .container {
+    justify-content: space-around;
+}
+.about-section .nav-bar .container .nav-links li {
+    list-style-type: none;
+    padding: 40px 10px;
+}
+.about-section .nav-bar .container .nav-links li a {
+    text-decoration: none;
+    color: white;
+}
+.about-section .nav-bar .container .nav-links li a:hover {
+    text-decoration: underline;
+    font-weight: 600;
+}
+.about-section .nav-bar .container-1 .nav-links-2 {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+}
+.about-section .nav-bar .container-1 {
+    justify-content: space-around;
+}
+.about-section .nav-bar .container-1 .nav-links-2 li {
+    list-style-type: none;
+    padding: 40px 10px;
+}
+.about-section .nav-bar .container-1 .nav-links-2 li a {
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+.about-section .nav-bar .container-1 .nav-links-2 li a:hover {
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+/* styling for the about-us div */
+.about-us {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    align-items: center;
+    /* align-content: flex-end; */
+    justify-content: center;
+    /* position: relative;
+    top: 30%; */
+    width: 50%;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+}
+.about-us h1 {
+    font-size: 60px;
+    /* text-decoration: underline; */
+    padding-bottom: 10px;
+    font-weight: 600;
+}
+.about-us .what-we-do {
+    font-weight: 500;
+    font-size: 20px;
+    color: white;
+    font-weight: 900;
+}
+.about-us a {
+    margin: 20px;
+    border: 1px thin black;
+    background-color: #59c2b6;
+    padding: 20px;
+    width: 300px;
+    align-items: center;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+/* ========Styling for the services section ============ */
+.services-section {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    width: 100vw;
+    padding: 50px 0;
+}
+.services-section h2 {
+    align-self: center;
+    font-size: 60px;
+}
+.services-section .services {
+    display: flex;
+    flex-direction: row;
+    /* display: grid;
+    grid-template-columns: 500px 500px; */
+    /* height: 100vh; */
+    width: 100vw;
+    justify-content: space-around;
+}
+.services-section .box {
+    display: flex;
+    flex-direction: column;
+    border: 20%;
+    height: 400px;
+    align-content: space-between;
+}
+/* .services-section .services .box .content {
+    display: flex;
+    flex-direction: column;
+    align-content: flex-end;
+} */
+/* .services-section .services .box .content a {
+    text-decoration: none;
+    background-color: orange;
+    padding: 10px 20px;
+    border-radius: 10px;
+} */
+.services-section .services .box .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: flex-end;
+    justify-content: center;
+    width: 250px;
+}
+.services-section .services .box .content p {
+    font-size: 15px;
+}
+.services-section .services .box img {
+    height: 200px;
+    width: 200px;
+}
+/* ========== Contact section ========== */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: space-around;
+    /* width: 100vw; */
+    /* height: 500px;
+    width: 500px; */
+}
+.contact-section form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.contact-section .contact-container {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    border: 1px thin black;
+    box-shadow: 2px 4px gray;
+    border-radius: 20px;
+    height: 100px;
+    text-align: center;
+    width: 500px;
+    margin: 20px;
+    padding: 15px;
+    align-content: space-between;
+    justify-content: center;
+}
+.contact-section .contact-container a {
+    color: white;
+    background-color: #59c2b6;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    width: 200px;
+    align-self: center;
+    align-items: center;
+    align-content: center;
+    margin-top: 10px;
+}
+.contact-section .contact-container a:hover {
+    text-decoration: underline;
+    font-weight: 600;
+} 
+/* ========= Footer section ========== */
+.main-footer {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    background-color: #0b404c;
+    justify-content: space-around;
+    align-items: center;
+}
+.main-footer .logo-2 img {
+    height: 100px;
+    width: 300px;
+    padding: 40px;
+    position: relative;
+    top: 10px;
+    /* left: 10px; */
+}
+.main-footer .nav-links ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-evenly;
+}
+.main-footer .nav-links ul li {
+    padding: 40px 20px;
+}
+.main-footer .nav-links ul li a {
+    text-decoration: none;
+    color: white;
+}
+.main-footer .nav-links ul li a:hover {
+    text-decoration: underline;
+    font-weight: 500;
+}
+.main-footer .socials {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.main-footer .socials .icon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center;
+}
+.main-footer .socials .icon a img {
+    width: 32px;
+    height: 32px;
+    padding: 5px 10px;
+}
+.main-footer .socials {
+    color: white;
+}
