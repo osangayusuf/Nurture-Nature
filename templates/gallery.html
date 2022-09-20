@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/gallery.css')}}">
+    <title>Gallery</title>
+</head>
+<body>
+    <div class="logos">
+        <img src="{{ url_for('static', filename='./img/logo.png') }}" class="logo">
+    </div>
+
+    <div class="cons">
+      <div class="galle">
+          <img src="{{ url_for('static', filename='./img/gallery/pic8.jpeg') }}" class="pic8">
+          <img src="{{ url_for('static', filename='./img/gallery/download.jpeg') }}" class="down" >
+          <img src="{{ url_for('static', filename='./img/gallery/images.jpeg') }}" class="imgs" >
+      </div>
+      <div class="galle-3">    
+          <img src="{{ url_for('static', filename='./img/gallery/pic1.jpg') }}" class="pic1" >
+          <img src="{{ url_for('static', filename='./img/gallery/pic14.jpg') }}" class="pic14">
+          <img src="{{ url_for('static', filename='./img/gallery/pic3.jpg') }}" class="pic3">
+        
+      </div >
+      <div class="galle-1">    
+          <img src="{{ url_for('static', filename='./img/gallery/pic5.jpg') }}" class="pic5" >
+          <img src="{{ url_for('static', filename='./img/gallery/pic6.jpg') }}" class="pic6">
+          <img src="{{ url_for('static', filename='./img/gallery/pic7.jpg') }}" class="pic7">
+          
+      </div>
+      <div class="galle-2">
+          <img src="{{ url_for('static', filename='./img/gallery/pic9.jpeg') }}" class="pic9" >
+          <img src="{{ url_for('static', filename='./img/gallery/oilpalm.jpg') }}" class="palm">
+          <img src="{{ url_for('static', filename='./img/gallery/pic11.jpg') }}" class="pic11">
+        
+
+      </div>
+      <div class="galle-4">
+          <img src="{{ url_for('static', filename='./img/gallery/pic13.webp') }}" class="pic13" >
+          <img src="{{ url_for('static', filename='./img/gallery/19.jpg') }}" class="pics">
+          <img src="{{ url_for('static', filename='./img/gallery/pic10.jpg') }}" class="pic10">
+      </div>
+      <div class="galle-5">
+        <img src="{{ url_for('static', filename='./img/gallery/pic2.jpg') }}" class="pic2" >
+        <img src="{{ url_for('static', filename='./img/gallery/pic12.jpg') }}" class="pic12">
+        <img src="{{ url_for('static', filename='./img/gallery/pic4.webp') }}" class="pic4">
+      </div>
+    </div>
+
+
+     <!-- Footer section -->
+  <div class="main-footer">
+    <div class="logo-2">
+      <img src="{{ url_for('static', filename='./img/logo.png') }}" alt="logo">
+    </div>
+    <div class="nav-links">
+      <ul>
+        <li><a href="{{url_for('home')}}">About</a></li>
+        <!-- <li><a href="{{url_for('gallery')}}">Gallery</a></li> -->
+        <li><a href="{{url_for('contact')}}">Contact</a></li>
+        <li><a href="#blog">Blog</a></li>
+      </ul>
+    </div>
+    <div class="socials">
+      <p>Reach us on our social media</p>
+      <div class="icon">
+        <a href="#"><img src="{{ url_for('static', filename='./img/logo-facebook.svg') }}" alt="facebook"></a>
+        <a href="#"><img src="{{ url_for('static', filename='./img/logo-instagram.svg') }}" alt="instagram"></a>
+        <a href="#"><img src="{{ url_for('static', filename='./img/logo-whatsapp.svg') }}" alt="whatsapp"></a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

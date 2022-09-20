@@ -22,8 +22,8 @@
           <li><a class="active" href="#home">Home</a></li>
           <li><a href="#about">About US</a></li>
           <li><a href="#services">Our Services</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a href="{{url_for('gallery')}}">Gallery</a></li>
+          <li><a href="{{url_for('contact')}}">Contact</a></li>
         </ul>
       </div>
       <div class="container-1">
@@ -49,7 +49,7 @@
       <br>
       <p class="what-we-do">We at NUTURE NATURE are a landscaping business, here to give your surroundings the lush
         green look you desire.</p>
-      <a href="#">Contact us</a>
+      <a href="{{url_for('contact')}}">Contact us</a>
     </div>
   </div>
   <div class="services-section">
@@ -109,7 +109,7 @@
   <div class="contact-section" id="contact">
     <div class="contact-container">
       <h2>Have a specific request or need a Quote?</h2>
-      <a href=""> Contact Us.</a>
+      <a href="{{url_for('contact')}}"> Contact Us.</a>
       <!-- <p>Please fill the below form below and we will get back to you.</p> -->
       <!-- This is the contact section -->
       <!-- <form action="" class="enquiry">
@@ -145,8 +145,8 @@
     <div class="nav-links">
       <ul>
         <li><a href="#about">About</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="{{url_for('gallery')}}">Gallery</a></li>
+        <li><a href="{{url_for('contact')}}">Contact</a></li>
         <li><a href="#blog">Blog</a></li>
       </ul>
     </div>

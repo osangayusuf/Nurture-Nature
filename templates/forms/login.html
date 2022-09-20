@@ -8,6 +8,9 @@
     <title>Login</title>
 </head>
 <body>
+    <div class="logos">
+        <img src="{{ url_for('static', filename='./img/logo.png') }}" class="logo">
+    </div>
     <form action="{{url_for('login')}}" method="POST">
         <div class="heading"><h2>Login</h2></div>
         <!-- hidden tag -->
@@ -33,5 +36,27 @@
         {{ form.login(class="btn") }} <br>
         <p>Don't  have an Account?<a href="{{url_for('sign_up')}}">Sign Up.</a></p>
     </form>
+
+      <!-- Footer section -->
+      <div class="main-footer">
+        <div class="logo-2">
+        <img src="{{ url_for('static', filename='./img/logo.png') }}" alt="logo">
+        </div>
+    <div class="nav-links">
+      <ul>
+        <li><a href="{{url_for('home')}}">About</a></li>
+        <li><a href="{{url_for('gallery')}}">Gallery</a></li>
+        <li><a href="{{url_for('contact')}}">Contact</a></li>
+        <li><a href="#blog">Blog</a></li>
+      </ul>
+    </div>
+    <div class="socials">
+      <p>Reach us on our social media</p>
+      <div class="icon">
+        <a href="#"><img src="{{ url_for('static', filename='./img/logo-facebook.svg') }}" alt="facebook"></a>
+        <a href="#"><img src="{{ url_for('static', filename='./img/logo-instagram.svg') }}" alt="instagram"></a>
+        <a href="#"><img src="{{ url_for('static', filename='./img/logo-whatsapp.svg') }}" alt="whatsapp"></a>
+      </div>
+    </div>
 </body>
 </html>
