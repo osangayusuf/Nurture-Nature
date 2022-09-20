@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/forms.css')}}">
+    <title>Sign Up</title>
+</head>
+<body>
+    <form action="{{url_for('sign_up')}}" method="POST">
+        <div class="heading"><h2>Sign Up</h2></div>
+        <!-- enter hiidden tag -->
+        {{ form.hidden_tag() }}
+
+        <!-- username -->
+        <div class="form_group">
+            {{ form.username.label }}
+            {{ form.username(class="form_input") }}
+        </div>
+        
+        <!-- email -->
+        <div class="form_group">
+            {{ form.email.label }}
+            {{ form.email(placeholder='example@mail.com', class="form_input") }}
+        </div>
+        
+        <!-- phone number -->
+        <div class="form_group">
+            {{ form.phone.label }}
+            {{ form.phone(class="form_input") }}
+        </div>
+        
+        <!-- password -->
+        <div class="form_group">
+            {{ form.password.label }}
+            {{ form.password(class="form_input") }}
+        </div>
+        
+        <!-- confirm password -->
+        <div class="form_group">
+            {{ form.confirm_password.label}}
+            {{ form.confirm_password(class="form_input") }}
+        </div>
+
+        <!-- submit -->
+        {{ form.submit(class="btn") }} <br>
+        <p>Already have an Account?<a href="{{url_for('login')}}">Login.</a></p>
+    </form>
+</body>
+</html>

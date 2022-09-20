@@ -10,7 +10,7 @@
 .about-section {
     display: flex;
     flex-direction: column;
-    background-image: url(../img/yard.jpg);
+    background-image: url(../img/yard_2.png);
     background-size: 100% 100%;
     color: white;
     height: 100vh;
@@ -86,7 +86,7 @@
     /* position: relative;
     top: 30%; */
     width: 50%;
-    color: black;
+    color: white;
     font-weight: 500;
     font-size: 20px;
 }
@@ -99,7 +99,7 @@
 .about-us .what-we-do {
     font-weight: 500;
     font-size: 25px;
-    color: black;
+    color: white;
     font-weight: 900;
 }
 .about-us a {
@@ -191,6 +191,7 @@
     border: 1px thin black;
     box-shadow: 2px 4px gray;
     border-radius: 20px;
+    border: .5px solid black;
     height: 100px;
     text-align: center;
     width: 500px;
