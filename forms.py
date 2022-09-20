@@ -13,8 +13,8 @@ class RegistrationForm(FlaskForm):
     email = EmailField('Email : ', validators=[DataRequired(), Email()])
     # check how to use a TelField in flask
     phone = StringField('Phone Number : ', validators=[DataRequired(), Length(min=11, max=15)])
-    password = PasswordField('Password ', validators=[DataRequired(), Length(min=8)])
-    confirm_password = PasswordField('Confirm Password', validators=[DataRequired(), EqualTo('password')])
+    password = PasswordField('Password : ', validators=[DataRequired(), Length(min=8)])
+    confirm_password = PasswordField('Confirm Password : ', validators=[DataRequired(), EqualTo('password')])
     submit = SubmitField('Register')
 
     # def validate_email(self, field):

@@ -142,6 +142,9 @@
     height: 400px;
     align-content: space-between;
 }
+p{
+    font-style: italic;
+}
 /* .services-section .services .box .content {
     display: flex;
     flex-direction: column;
