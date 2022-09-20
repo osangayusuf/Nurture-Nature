@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='styles/forms.css')}}">
+    <title>Login</title>
+</head>
+<body>
+    <form action="{{url_for('login')}}" method="POST">
+        <div class="heading"><h2>Login</h2></div>
+        <!-- hidden tag -->
+        {{ form.hidden_tag() }}
+
+        <!-- email -->
+        <div class="form_group">
+            {{ form.email.label }}
+            {{ form.email(placeholder='example@gmail.com', class="form_input") }}
+        </div>
+
+        <!-- password -->
+        <div class="form_group">
+            {{ form.password.label }}
+            {{ form.password(class="form_input") }}</div>
+        
+        <!-- remember user -->
+        <div class="form_group">
+            {{ form.remember_me() }}
+            {{ form.remember_me.label }}
+        </div>
+
+        {{ form.login(class="btn") }} <br>
+        <p>Don't  have an Account?<a href="{{url_for('sign_up')}}">Sign Up.</a></p>
+    </form>
+</body>
+</html>
